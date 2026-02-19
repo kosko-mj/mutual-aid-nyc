@@ -1,0 +1,215 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Colors - Mutual Aid Inspired */
+    --color-solidarity: #d44;
+    --color-community: #4a6fa5;
+    --color-support: #2a7a5a;
+    --color-warning: #e6b800;
+
+    --color-bg: #ffffff;
+    --color-text: #1a1a1a;
+    --color-text-light: #4a4a4a;
+
+    /* Typography */
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+
+    /* Spacing Scale - 4px base */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /* Layout */
+    --container-width: 1200px;
+    --border-radius:4px
+    
+    /* Accessibility */
+    --focus-outline: 3px solid var(--color-community);
+    --focus-offset: 2px;
+}
+
+/* Base Element Styles */
+html {
+    font-size: var(--font-size-base);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+
+    /* Improve Text Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+/* Links */
+a {
+    color: var(--color-community);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Focus States - Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+}
+
+/* Container for Page Content */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    width: 100%;
+}
+
+/* Language Switcher */
+.language-nav {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-text-light);
+    padding: var(--space-xs) 0;
+}
+
+.language-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-xs);
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.language-list li {
+    margin: 0;
+}
+
+.language-list a {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+}
+
+.language-list a:hover {
+    background: var(--color-text-light);
+    color: var(--color-bg);
+}
+
+.language-list a[aria-current="page"] {
+    background: var(--color-community);
+    color: white;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .language-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.2;
+}
+
+/* Primary Button (Solidarity Actions) */
+.btn-primary {
+    background: var(--color-solidarity);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #b33;
+    transform: translateY(-1px);
+}
+
+/* Secondary Button (Community Actions) */
+.btn-secondary {
+    background: var(--color-community);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #3a5a8c;
+    transform: translateY(-1px);
+}
+
+/* Outline Button Variant */
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--color-community);
+    color: var(--color-community);
+}
+
+.btn-outline:hover {
+    background: var(--color-community);
+    color: white;
+}
+
+/* Full Width Button (for mobile) */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Small Button (for filers) */
+btn-sm {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.875rem;
+}
