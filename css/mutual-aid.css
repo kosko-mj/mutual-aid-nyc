@@ -1,53 +1,119 @@
-/* Page header */
-.page-header {
-  text-align: center;
-  padding: var(--space-xl) 0 var(--space-lg);
-}
-
-.page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-sm);
-  color: var(--color-text);
-}
-
-.page-header .tagline {
-  font-size: 1.2rem;
-  color: var(--color-text-light);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Footer */
-.page-footer {
-    background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
-    padding: var(--space-lg) 0;
-    margin-top: var(--space-xl);
-}
-
-.page-footer .container {
+/* Header with tagline */
+.logo-area {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
 }
 
-.page-footer p {
-    margin: 0;
+.site-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.site-tagline {
+    font-size: 0.85rem;
     color: var(--color-text-light);
+    font-weight: 400;
+    letter-spacing: 2px; /* Add this - increases space between letters */
+    display: block;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    text-transform: uppercase; /* Optional - makes it more blocky */
 }
 
-/* Filters Placeholder */
-.filters-section {
-    padding: var(--space-md) 0;
+/* Intro Section */
+.intro-section {
     background: var(--color-bg);
+    padding: var(--space-xl) 0 var(--space-lg);
     border-bottom: 1px solid var(--color-border);
 }
 
-.filters-placeholder {
-    color: var(--color-text-light);
-    font-style: italic;
-    margin: 0;
+/* Logo placeholder */
+.logo-placeholder {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1;
     text-align: center;
+    color: var(--color-solidarity);
+    letter-spacing: 4px;
+    margin-bottom: var(--space-lg);
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .logo-placeholder {
+        font-size: 5rem;
+        letter-spacing: 2px;
+    }
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-text);
+    padding: 0 var(--space-md);
+}
+
+/* Updates Section */
+.updates-section {
+    padding: var(--space-xl) 0;
+    background: #f9f9f9;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    color: var(--color-text);
+}
+
+.updates-list {
+    max-width: 800px;
+    margin: 0 auto var(--space-lg);
+}
+
+.update-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-md);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-community);
+    min-width: 90px;
+}
+
+.update-content {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.updates-link {
+    display: block;
+    text-align: center;
+    color: var(--color-community);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.updates-link:hover {
+    text-decoration: underline;
 }
 
 /* Resource Grid */
@@ -57,12 +123,16 @@
 
 .resource-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
     margin-top: var(--space-lg);
 }
 
-/* Resource Cards */
+.resource-grid--homepage {
+    margin-bottom: var(--space-xl);
+}
+
+/* Resource Card */
 .resource-card {
     background: var(--color-bg);
     border: 1px solid var(--color-border);
@@ -78,6 +148,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Card Category */
 .card-category {
     display: inline-block;
     font-size: 0.75rem;
@@ -88,6 +159,7 @@
     margin-bottom: var(--space-xs);
 }
 
+/* Card Title */
 .card-title {
     font-size: 1.25rem;
     font-weight: 600;
@@ -95,18 +167,21 @@
     color: var(--color-text);
 }
 
+/* Card Neighborhood */
 .card-neighborhood {
     font-size: 0.9rem;
     color: var(--color-text-light);
     margin-bottom: var(--space-sm);
 }
 
+/* Card Description */
 .card-description {
     font-size: 0.95rem;
     margin-bottom: var(--space-md);
     flex-grow: 1;
 }
 
+/* Card Details (hours + link) */
 .card-details {
     display: flex;
     justify-content: space-between;
@@ -131,6 +206,7 @@
     text-decoration: underline;
 }
 
+/* Card Tags */
 .card-tags {
     display: flex;
     flex-wrap: wrap;
@@ -147,14 +223,62 @@
     color: var(--color-text-light);
 }
 
+.resources-footer {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
 /* Responsive adjustments */
+@media (max-width: 900px) {
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 600px) {
     .resource-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-md);
     }
     
     .resource-card {
         padding: var(--space-md);
     }
+    
+    .logo-area {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .update-item {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+    
+    .update-date {
+        min-width: auto;
+    }
+}
+
+/* Footer */
+.page-footer {
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    margin-top: var(--space-xl);
+}
+
+.page-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer p {
+    margin: 0;
+    color: var(--color-text-light);
 }

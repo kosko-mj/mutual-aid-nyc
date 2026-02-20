@@ -46,8 +46,7 @@
 
     <!-- Header with Nav -->
     <header class="site-header">
-
-        <!-- Language Switcher HTML -->
+        <!-- Language Switcher -->
         <nav aria-label="Language selector" class="language-nav">
             <ul class="language-list">
                 <li><a href="/" lang="en" aria-current="page">English</a></li>
@@ -57,112 +56,188 @@
             </ul>
         </nav>
 
-        <!-- Main Header Container -->
-        <div class="header-container">
+        <!-- Main Header -->
+        <div class="header-main">
             <div class="logo-area">
-                <a href="/" class="site-logo">Neighbor's Aid Network</a>
+                <a href="index.html" class="site-logo">Neighbor's Aid Network</a>
+                <span class="site-tagline">Find help. Give help.</span>
             </div>
 
             <nav class="main-nav" aria-label="Main navigation">
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="#" class="nav-link">Food</a></li>
                     <li><a href="#" class="nav-link">Medical</a></li>
                     <li><a href="#" class="nav-link">Housing</a></li>
                     <li><a href="#" class="nav-link">Legal</a></li>
                     <li><a href="#" class="nav-link">Utilities</a></li>
+                    <li><a href="Contribute/index.html" class="nav-link">Contribute</a></li>
                 </ul>
             </nav>
-
-            <a href="#" class="btn btn-primary btn-sm">Submit Resource</a>
         </div>
-    </header> 
+    </header>
     
     
-
     <!-- Main Content -->
     <main id="main-content">
-        <header class="page-header">
-            <h1>Neighbor's Aid Network</h1>
-            <p class="tagline">Find help. Give help.</p>
-        </header>
 
-        <!-- Resource filters -->
-        <section class="filters-section" aria-label="Resource filters">
-            <div class="container">
-                <p class="filters-placeholder">Filters coming soon</p>
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="logo-placeholder" aria-hidden="true">NAN</div>
+            <h2 class="visually-hidden">About Neighbor's Aid Network</h2>
+            <p class="intro-text">We connect people in Ridgewood, Bushwick, and beyond with 
+            mutual aid resources — food, housing, legal help, medical care, and more. All 
+            resources are community-vetted and free to access.</p>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section class="updates-section" aria-label="Recent updates">
+        <div class="container">
+            <h2 class="section-title">Recent Updates</h2>
+            <div class="updates-list">
+                <article class="update-item">
+                    <span class="update-date">Feb 20, 2026</span>
+                    <p class="update-content">New resource: <strong>Bushwick Food Co-op</strong> added to Food category</p>
+                </article>
+                <article class="update-item">
+                    <span class="update-date">Feb 18, 2026</span>
+                    <p class="update-content"><strong>Ridgewood Tenants Union</strong> now offers Saturday hours</p>
+                </article>
+                <article class="update-item">
+                    <span class="update-date">Feb 15, 2026</span>
+                    <p class="update-content"><strong>Community Health Action</strong> has added sliding-scale mental health services</p>
+                </article>
+                <article class="update-item">
+                    <span class="update-date">Feb 12, 2026</span>
+                    <p class="update-content"><strong>Legal Aid Society</strong> now has Spanish-speaking advocates available</p>
+                </article>
+                <article class="update-item">
+                    <span class="update-date">Feb 10, 2026</span>
+                    <p class="update-content"><strong>Ridgewood Mutual Aid</strong> seeking volunteers for weekend distribution</p>
+                </article>
             </div>
-        </section> 
+        </div>
+    </section>
 
-        <!-- Resource Grid -->
-        <section class="resources-section" aria-label="Resource directory">
-            <div class="container">
-                <h2 class="visually-hidden">Available Resources</h2>
-                <div class="resource-grid">
+    <!-- Resource Grid -->
+    <section class="resources-section" aria-label="Recent resources">
+        <div class="container">
+            <h2 class="section-title">Recent Resources</h2>
+            <div class="resource-grid">
 
-                    <!-- Sample Card 1 - Food -->
-                    <article class="resource-card">
-                        <div class="card-category">Food</div>
-                        <h3 class="card-title">Ridgewood Community Fridge</h3>
-                        <p class="card-neighborhood">Ridgewood, Queens</p>
-                        <p class="card-description">Free food available 24/7. 
-                        Take what you need, leave what you can. Located at 123 Wycoff Ave</p>
-                        <div class="card-details">
-                            <span class="card-hours">24 hours</span>
-                            <a href="#" class="card-link">@ridgewoodfridge</a>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag">Fresh produce</span>
-                            <span class="tag">No questions asked</span>
-                        </div>
-                    </article>
-                    
-                    <!-- Sample Card 2 - Legal -->
-                    <article class="resource-card">
-                        <div class="card-category">Legal</div>
-                        <h3 class="card-title">Bushwick Tenant Rights Clinic</h3>
-                        <p class="card-neighborhood">Bushwick, Brooklyn</p>
-                        <p class="card-description">Free legal advice for tenants facing harassment,
-                        eviction, or repair issues. Spanish interpretation available</p>
-                        <div class="card-details">
-                            <span class="card-hours">Wed 6-8pm</span>
-                            <a href="#" class="card-link">(718) 555-0123</a>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag">Spanish</span>
-                            <span class="tag">Free</span>
-                            <span class="tag">Walk-ins welcome</span>
-                        </div>
-                    </article>
-                    
-                    <!-- Sample Card 3 - Medical -->
-                    <article class="resource-card">
-                        <div class="card-category">Medical</div>
-                        <h3 class="card-title">Community Health Action</h3>
-                        <p class="card-neighborhood">East Williamsburg, Brooklyn</p>
-                        <p class="card-description">Sliding-scale mental health services and support groups. No insurance required</p>
-                        <div class="card-details">
-                            <span class="card-hours">Mon-Fri 9am-5pm</span>
-                            <a href="#" class="card-link">communityhealth.org</a>
-                        </div> 
-                            <div class="card-tags">
-                            <span class="tag">Mental health</span>
-                            <span class="tag">Sliding scale</span>
-                            <span class="tag">LGBTQ+ affirming</span>
-                        </div>
-                    </article> 
+                <!-- Sample Card 1 - Food -->
+                <article class="resource-card">
+                    <div class="card-category">Food</div>
+                    <h3 class="card-title">Ridgewood Community Fridge</h3>
+                    <p class="card-neighborhood">Ridgewood, Queens</p>
+                    <p class="card-description">Free food available 24/7. 
+                    Take what you need, leave what you can. Located at 123 Wycoff Ave</p>
+                    <div class="card-details">
+                        <span class="card-hours">24 hours</span>
+                        <a href="#" class="card-link">@ridgewoodfridge</a>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Fresh produce</span>
+                        <span class="tag">No questions asked</span>
+                    </div>
+                </article>
+                
+                <!-- Sample Card 2 - Legal -->
+                <article class="resource-card">
+                    <div class="card-category">Legal</div>
+                    <h3 class="card-title">Bushwick Tenant Rights Clinic</h3>
+                    <p class="card-neighborhood">Bushwick, Brooklyn</p>
+                    <p class="card-description">Free legal advice for tenants facing harassment,
+                    eviction, or repair issues. Spanish interpretation available</p>
+                    <div class="card-details">
+                        <span class="card-hours">Wed 6-8pm</span>
+                        <a href="#" class="card-link">(718) 555-0123</a>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Spanish</span>
+                        <span class="tag">Free</span>
+                        <span class="tag">Walk-ins welcome</span>
+                    </div>
+                </article>
+                
+                <!-- Sample Card 3 - Medical -->
+                <article class="resource-card">
+                    <div class="card-category">Medical</div>
+                    <h3 class="card-title">Community Health Action</h3>
+                    <p class="card-neighborhood">East Williamsburg, Brooklyn</p>
+                    <p class="card-description">Sliding-scale mental health services and support groups. No insurance required</p>
+                    <div class="card-details">
+                        <span class="card-hours">Mon-Fri 9am-5pm</span>
+                        <a href="#" class="card-link">communityhealth.org</a>
+                    </div> 
+                    <div class="card-tags">
+                        <span class="tag">Mental health</span>
+                        <span class="tag">Sliding scale</span>
+                        <span class="tag">LGBTQ+ affirming</span>
+                    </div>
+                </article>
 
-                </div>
+                <!-- Sample Card 4 - Housing -->
+                <article class="resource-card">
+                    <div class="card-category">Housing</div>
+                    <h3 class="card-title">Ridgewood Tenants Union</h3>
+                    <p class="card-neighborhood">Ridgewood, Queens</p>
+                    <p class="card-description">Weekly meetings, know-your-rights workshops, and collective action for tenants.</p>
+                    <div class="card-details">
+                        <span class="card-hours">Thurs 7pm</span>
+                        <a href="#" class="card-link">@ridgewoodtenants</a>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Tenant rights</span>
+                        <span class="tag">Workshops</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </article>
+
+                <!-- Sample Card 5 - Utilities -->
+                <article class="resource-card">
+                    <div class="card-category">Utilities</div>
+                    <h3 class="card-title">HEAP Assistance Program</h3>
+                    <p class="card-neighborhood">NYC-wide</p>
+                    <p class="card-description">Financial help with heating and energy costs for eligible households.</p>
+                    <div class="card-details">
+                        <span class="card-hours">Mon-Fri 9am-5pm</span>
+                        <a href="#" class="card-link">access.nyc.gov</a>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Financial aid</span>
+                        <span class="tag">Government</span>
+                        <span class="tag">Seasonal</span>
+                    </div>
+                </article>
+
+                <!-- Sample Card 6 - Mutual Aid -->
+                <article class="resource-card">
+                    <div class="card-category">Mutual Aid</div>
+                    <h3 class="card-title">Bushwick Ayuda Mutua</h3>
+                    <p class="card-neighborhood">Bushwick, Brooklyn</p>
+                    <p class="card-description">Community organizing, food distribution, and solidarity networks.</p>
+                    <div class="card-details">
+                        <span class="card-hours">Ongoing</span>
+                        <a href="#" class="card-link">@bushwickmutualaid</a>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Volunteer</span>
+                        <span class="tag">Spanish</span>
+                        <span class="tag">Direct aid</span>
+                    </div>
+                </article>
+
             </div>
-        </section> 
-
-        <!-- Submission form -->
-
-    </main>
+        </div>
+    </section>
+</main>
     
     <footer class="page-footer">
         <div class="container">
-            <p>© 2026 Neighbor's Aid Network · <a href="/about">About</a> · <a href="/contribute">
+            <p>© 2026 Neighbor's Aid Network · <a href="/about">About</a> · <a href="Contribute/index.html">
             Contribute</a> · <a href="/privacy">Privacy</a></p>
         </div>    
     </footer>
