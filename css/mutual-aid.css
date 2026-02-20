@@ -285,3 +285,25 @@
     margin: 0;
     color: var(--color-text-light);
 }
+
+/* Force header consistency across all pages */
+.site-header .logo-area {
+    align-items: flex-start !important;
+    padding-left: 0.75rem !important;
+    width: 100% !important;
+}
+
+.site-header .site-logo {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.site-header .site-tagline {
+    font-size: 1rem !important;
+    color: var(--color-text-light) !important;
+    letter-spacing: 2px !important;
+    text-align: left !important;
+    margin-left: 2px !important;
+    text-transform: uppercase !important;
+}
