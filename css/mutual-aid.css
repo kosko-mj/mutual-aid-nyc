@@ -1,0 +1,37 @@
+/* Page header */
+.page-header {
+  text-align: center;
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.page-header .tagline {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.page-footer {
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    margin-top: var(--space-xl);
+}
+
+.page-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer p {
+    margin: 0;
+    color: var(--color-text-light);
+}

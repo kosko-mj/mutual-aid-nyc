@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutual Aid NYC</title>
+    <title>Neighbor's Aid Network</title>
 
     <!-- Language Alternatives -->
      <link rel="alternate" href="es" href="https://mutualaid.nyc/es/">
@@ -25,7 +25,7 @@
     
     <!-- Skip Link Style (TEMP) -->
     <style>
-        skip-link {
+        .skip-link {
             position: absolute;
             top: -40px;
             left: 0;
@@ -43,22 +43,48 @@
 <body>
     <!-- Skip Link HTML -->
     <a href="#main-content" class="skip-link">Skip to main content</a> 
+
+    <!-- Header with Nav -->
+    <header class="site-header">
+
+        <!-- Language Switcher HTML -->
+        <nav aria-label="Language selector" class="language-nav">
+            <ul class="language-list">
+                <li><a href="/" lang="en" aria-current="page">English</a></li>
+                <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
+                <li><a href="/zh/" lang="zh" hreflang="zh">中文</a></li>
+                <li><a href="/bn/" lang="bn" hreflang="bn">বাংলা</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Header Container -->
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="/" class="site-logo">Neighbor's Aid Network</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Food</a></li>
+                    <li><a href="#" class="nav-link">Medical</a></li>
+                    <li><a href="#" class="nav-link">Housing</a></li>
+                    <li><a href="#" class="nav-link">Legal</a></li>
+                    <li><a href="#" class="nav-link">Utilities</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn btn-primary btn-sm">Submit Resource</a>
+        </div>
+    </header> 
     
-    <!-- Language Switcher HTML -->
-    <nav aria-label="Language selector" class="language-nav">
-        <ul class="language-list">
-            <li><a href="/" lang="en" aria-current="page">English</a></li>
-            <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
-            <li><a href="/zh/" lang="zh" hreflang="zh">中文</a></li>
-            <li><a href="/bn/" lang="bn" hreflang="bn">বাংলা</a></li>
-        </ul>
-    </nav> 
+    
 
     <!-- Main Content -->
     <main id="main-content">
         <header class="page-header">
-            <h1>Mutual Aid NYC</h1>
-            <p class="tagline">Resources for our communities, by our communities</p>
+            <h1>Neighbor's Aid Network</h1>
+            <p class="tagline">Find help. Give help.</p>
         </header>
 
         <!-- Resource filters -->
@@ -70,8 +96,10 @@
     </main>
     
     <footer class="page-footer">
-        <p>© 2025 Mutual Aid NYC · <a href="/about">About</a> · <a href="/contribute">
+        <div class="container">
+            <p>© 2026 Neighbor's Aid Network · <a href="/about">About</a> · <a href="/contribute">
             Contribute</a> · <a href="/privacy">Privacy</a></p>
+        </div>    
     </footer>
 </body>
 </html>
