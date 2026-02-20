@@ -35,3 +35,126 @@
     margin: 0;
     color: var(--color-text-light);
 }
+
+/* Filters Placeholder */
+.filters-section {
+    padding: var(--space-md) 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.filters-placeholder {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+
+/* Resource Grid */
+.resources-section {
+    padding: var(--space-xl) 0;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+/* Resource Cards */
+.resource-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-community);
+    margin-bottom: var(--space-xs);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+}
+
+.card-neighborhood {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.card-description {
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+    flex-grow: 1;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-md);
+}
+
+.card-hours {
+    color: var(--color-text-light);
+}
+
+.card-link {
+    color: var(--color-community);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .resource-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .resource-card {
+        padding: var(--space-md);
+    }
+}
